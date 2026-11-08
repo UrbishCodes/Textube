@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd frontend && npm ci && npm run build && mkdir -p ../public && cp -r dist/* ../public/",
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "frontend/dist/**"
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.py" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

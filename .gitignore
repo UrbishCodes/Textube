@@ -9,3 +9,8 @@ upload_new_version.sh
 .coverage
 coverage.xml
 .DS_STORE
+.agents/hooks.json
+.cursor/hooks.json
+frontend/node_modules/
+frontend/dist/
+.vercel

@@ -1,0 +1,24 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #242323; background: #f7f6f2; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+main { max-width: 1040px; margin: auto; padding: 28px 32px 80px; }
+header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #deddd7; padding-bottom: 18px; }
+.brand { display: flex; gap: 10px; align-items: center; font-weight: 700; letter-spacing: -.02em; }
+.mark { display: grid; place-items: center; background: #e85f43; color: white; width: 25px; height: 25px; border-radius: 6px; font-family: Georgia, serif; }
+.status { color: #73716b; font-size: .78rem; } .status i { display: inline-block; width: 7px; height: 7px; background: #43a66d; border-radius: 50%; margin-right: 6px; }
+.hero { padding: 92px 0 52px; max-width: 760px; } .eyebrow, .label { font-size: .68rem; letter-spacing: .13em; color: #88857d; font-weight: 700; }
+h1 { font: 400 clamp(2.4rem, 6vw, 4.7rem)/.98 Georgia, serif; letter-spacing: -.055em; margin: 12px 0 18px; }
+.intro { color: #77736b; font-size: 1.05rem; margin-bottom: 32px; } form { display: flex; gap: 10px; }
+input, select { border: 1px solid #d4d1c9; border-radius: 5px; background: #fffefa; color: inherit; font: inherit; padding: 13px 14px; outline: none; }
+form input { flex: 1; min-width: 0; } input:focus, select:focus, button:focus-visible { border-color: #e85f43; box-shadow: 0 0 0 3px #e85f4326; }
+button { border: 0; border-radius: 5px; padding: 12px 17px; background: #e85f43; color: #fff; font: 700 .88rem inherit; cursor: pointer; } button:disabled { opacity: .6; cursor: wait; }
+button.secondary { background: transparent; color: #484640; border: 1px solid #d4d1c9; }
+.message { font-size: .86rem; margin: 12px 0; } .error { color: #b33e2c; } .success { color: #318454; } .progress, .hint, .stats { color: #858178; font-size: .82rem; }
+.spinner { display: inline-block; width: 10px; height: 10px; border: 2px solid #ddd; border-top-color: #e85f43; border-radius: 50%; margin-right: 7px; animation: spin .7s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } }
+.workspace { border-top: 1px solid #deddd7; padding-top: 22px; } .meta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; font-size: .88rem; } .meta div { display: flex; align-items: center; gap: 8px; } .meta a { color: #d34e35; } .meta select { margin-left: auto; padding: 8px; font-size: .82rem; }
+.badge { font-size: .63rem; background: #ebe8df; color: #817d73; padding: 4px 6px; border-radius: 3px; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin: 35px 0 12px; } .toolbar label { display: flex; gap: 10px; align-items: center; color: #817d73; font-size: .7rem; font-weight: 700; letter-spacing: .1em; } .toolbar select { padding: 8px; color: #242323; font-size: .85rem; letter-spacing: 0; font-weight: 400; } .actions { display: flex; gap: 8px; }
+.preview-wrap { border: 1px solid #deddd7; background: #fffefa; border-radius: 6px; } .preview { margin: 0; min-height: 340px; max-height: 600px; overflow: auto; padding: 25px; white-space: pre-wrap; word-break: break-word; font: .9rem/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+details { margin-top: 14px; border-top: 1px solid #deddd7; padding-top: 14px; } summary { cursor: pointer; font-size: .84rem; font-weight: 700; } .annotations { display: grid; gap: 8px; margin-top: 14px; } .annotations label { display: flex; gap: 15px; align-items: center; } .annotations span { color: #858178; font: .75rem monospace; width: 70px; } .annotations input { padding: 8px; flex: 1; }
+.empty { text-align: center; color: #858178; border-top: 1px solid #deddd7; padding: 75px 20px; } .empty-icon { color: #e85f43; font-size: 2rem; } .empty h2 { color: #484640; font: 400 1.7rem Georgia, serif; } .empty p { max-width: 420px; margin: auto; font-size: .9rem; line-height: 1.6; }
+@media (max-width: 650px) { main { padding: 20px 18px 50px; } .hero { padding: 64px 0 40px; } form, .toolbar { align-items: stretch; flex-direction: column; } form button { width: 100%; } .meta select { margin-left: 0; width: 100%; } .actions { justify-content: flex-end; } }
